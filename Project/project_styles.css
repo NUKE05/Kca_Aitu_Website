@@ -59,12 +59,14 @@ nav a:hover {
     background-position: center center;
 }
 
+
 .banner h1{
-    font-size: 60px;
+    font-size: 100px;
     letter-spacing: 3px;
     font-family: 'Inter', sans-serif;
-    color:#00ffef;
+    color:white;
     text-align: center;
+    padding:120px 0;
 }
 
 .content {
