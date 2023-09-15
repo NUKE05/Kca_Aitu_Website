@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 body {
     color: black;
     background-color: white;
@@ -15,8 +14,8 @@ header {
     width: 100%;
     z-index: 12;
     position: fixed;
-} 
 
+}
 .logo {
     position: fixed;
     margin-left: 40px;
@@ -61,7 +60,6 @@ nav a:hover {
 }
 
 .banner h1{
-    padding-top: 9%;
     font-size: 60px;
     letter-spacing: 3px;
     font-family: 'Inter', sans-serif;
@@ -105,7 +103,7 @@ nav a:hover {
     text-align: left;
     line-height: 120%;
     margin-left: 5%;
-    margin-top: 14px;
+    margin-top: 15px;
     font-size: 12px;
     font-family: 'Inter', sans-serif;
 }
