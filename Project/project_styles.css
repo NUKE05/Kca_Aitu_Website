@@ -72,7 +72,7 @@ nav a:hover {
 .content {
     width: 100%;
     position: relative;
-    top: 400px;
+    top: 350px;
     background: #A9DEF9; 
     height: 1500px;
 }
@@ -95,7 +95,7 @@ nav a:hover {
     line-height: 30%;
     font-weight: lighter;   
     margin-left: 19%;
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
@@ -105,7 +105,7 @@ nav a:hover {
     text-align: left;
     line-height: 120%;
     margin-left: 8.3%;
-    margin-top: 10px;
+    margin-top: 18px;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
 }
@@ -130,7 +130,7 @@ nav a:hover {
 .read_more {
     margin-left: 33%;
     float: left;
-    margin-top: 21px;
+    margin-top: 20px;
 }
 
 .read_more a{
@@ -147,4 +147,32 @@ nav a:hover {
     background-color: black;    
 }
 
+.sliderblock {
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 3%;
+}
+
+.slider-look {
+	max-width: 90%;
+	margin: auto auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 5.5;
+	overflow-x: scroll;
+	scroll-snap-type: x;
+    scroll-behavior: smooth;
+	border-radius: 50px;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	object-fit: cover;
+}
 
