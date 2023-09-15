@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    height: 100px;
-    background-color:#A9A9A9;
+    height: 60px;
+    background-color: aliceblue;
     width: 100%;
     z-index: 12;
     position: fixed;
@@ -20,51 +20,52 @@ header {
 .logo {
     position: fixed;
     margin-left: 40px;
-    margin-top: 13px;
-    width: 70px;
+    margin-top: 11px;
+    width: 39px;
 }
 
 nav {
     float: right;
-    line-height: 100px;
+    line-height: 65px;
     margin-right: 50px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
     font-family: 'Inter', sans-serif;
     margin: 0 10px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    line-height: 3%;
 }
 
 nav a:hover {
-    color: aqua;
+    color: #A9DEF9;
 }
 
 .active {
-    color:black !important
+    color:#A9DEF9 !important
 }
 
 .banner {
     width: 100%;
     height: 450px;
     position: fixed;
-    top: 100px;
-    background-image: url(project_images/DSC05293-2.jpg);
+    top: 60px;
+    background-image: url(project_images/DSC01162\ copy.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
 }
 
 .banner h1{
-    padding-top: 6%;
-    font-size: 70px;
-    letter-spacing: 4px;
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
+    padding-top: 9%;
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-family: 'Inter', sans-serif;
+    color:#00ffef;
     text-align: center;
 }
 
@@ -72,21 +73,55 @@ nav a:hover {
     width: 100%;
     position: relative;
     top: 400px;
-    background: #ddd;
+    background: #A9DEF9; 
     height: 1500px;
 }
 
 .content h2 {
-    text-align: center;
-    padding-top: 3%;
-    letter-spacing: 4px;
+    text-align: left;
+    padding-top: 5%;
+    letter-spacing: 1px;
+    margin-left: 7%;
     font-size: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 1500;
+    font-family: 'Inter', sans-serif;
+}
+
+.content h3 {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    color: #A9A9A9;
+    line-height: 30%;
+    font-weight: 100;   
+    margin-left: 13%;
+    font-size: 20px;
+
 }
 
 .content p {
-    padding: 2%;
+    padding: 1.6%;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    line-height: 30px;
+    text-align: left;
+    line-height: 120%;
+    margin-left: 5%;
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+.content button {
+    background-color: #F7D6E0;
+    border-radius: 70px;
+    width: 100px;
+    height: 25px;
+    float: left;
+    margin-left: 6.5%;    
+    margin-top: 10px;
+}
+
+.regButton {
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
 }
