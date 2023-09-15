@@ -11,7 +11,7 @@ body {
 
 header {
     height: 100px;
-    background-color: rgb(133,220,186);
+    background-color:#A9A9A9;
     width: 100%;
     z-index: 12;
     position: fixed;
@@ -19,9 +19,9 @@ header {
 
 .logo {
     position: fixed;
-    margin-left: 25px;
-    margin-top: 5px;
-    width: 150px;
+    margin-left: 40px;
+    margin-top: 13px;
+    width: 70px;
 }
 
 nav {
