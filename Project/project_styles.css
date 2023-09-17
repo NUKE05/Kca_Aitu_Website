@@ -240,7 +240,8 @@ a {
 }
 
 .partners-list {
-    padding: 30px;
+    padding: 0;
+    margin-left:80px;
 }
 
 .partners-list li {
