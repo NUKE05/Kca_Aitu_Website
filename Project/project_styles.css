@@ -248,6 +248,16 @@ a {
     margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+.partners-list img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 30px;
+    position: relative;
+    top: 40px;
+} 
+>>>>>>> 425ca1d62884287b9bf1fcb89cf5e517dcb91436
 
 .heading{
     width: 90%;
