@@ -230,6 +230,10 @@ a {
     color: black;
 }
 
+
+.partners{
+    text-align: left;
+}
 .partners h3 {
     color: black;
     text-align: left;
@@ -244,21 +248,26 @@ a {
 
 .partners-list {
     padding: 0;
-    margin-left:80px;
+    margin-left: 80px;
+}
+.partners-ol{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.partners-list li {
-    padding: 0;
-    margin: 0;
+ .partners-list li {
+    display: inline-block;
+    margin: 0 100px;
 }
 
 .partners-list img {
     max-width: 100px;
     height: auto;
-    margin-right: 30px;
     position: relative;
     top: 40px;
-} 
+}   
 
 .heading{
     width: 100%;
