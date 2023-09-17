@@ -136,3 +136,24 @@ textarea{
 
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#center {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.social-media img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 30px;
+    position: relative;
+    top: 40px;
+} 
+
+   
+
+
