@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 body {
@@ -270,6 +271,8 @@ nav a:hover {
     background-color: rgb(219, 30, 87);
 }
 
+
+
 .title h1{
     text-align: center;
     padding-top: 50px;
@@ -283,6 +286,7 @@ nav a:hover {
     background-color: black;
     display: block;
     margin: auto;
+    background-color: salmon;
 }
 
 .columns{
@@ -305,4 +309,17 @@ nav a:hover {
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.column h2{
+    font-size: 28px;
+    color: salmon;
+    margin-bottom: 20px;
+}
+
+.column p{
+    font-size: 19px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: black;
 }
