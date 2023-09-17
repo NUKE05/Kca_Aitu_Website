@@ -17,6 +17,7 @@ header {
     position: fixed;
 
 }
+
 .logo {
     position: fixed;
     margin-left: 40px;
@@ -54,7 +55,7 @@ nav a:hover {
     height: 450px;
     position: fixed;
     top: 60px;
-    background-image: url(project_images/DSC01162\ copy.jpg);
+    background-image: url(project_images/bg.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -67,7 +68,7 @@ nav a:hover {
     font-family: 'Inter', sans-serif;
     color:white;
     text-align: center;
-    padding:120px 0;
+    padding:110px 0;
 }
 
 .content {
