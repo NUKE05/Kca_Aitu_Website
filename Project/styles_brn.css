@@ -75,7 +75,7 @@ nav a:hover {
     position: relative;
     top: 350px;
     background-color:rgb(255, 250, 205); 
-    height: 1500px;
+    height: 1200px;
 }
 
 .content h2 {
@@ -93,6 +93,7 @@ nav a:hover {
     font-family: 'Inter', sans-serif;
     letter-spacing: 1px;
     color: black;
+    margin-top:65px;
     margin-left: 11%;
     font-size: 70px;
 }
@@ -109,10 +110,14 @@ nav a:hover {
 }
 .content video{
     width:640px;
-    height:480px;
-    margin:0 30px 40px 800px;
-    position: absolute;
+    height:360px;
+    margin-left: 800px; 
+    margin-top:-270px;
+    border-radius: 10px; 
+    border-color: black;
+    position: relative;
 }
+
 .read_more {
     margin-left: 50%;
     float: left;
