@@ -10,6 +10,8 @@ body {
 }
 
 header {
+    overflow: hidden;
+    top: 0;
     height: 60px;
     background-color: aliceblue;
     width: 100%;
@@ -186,7 +188,7 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
+    margin: 80px auto;
 }
 .heading h1{
     font-size: 50px;
