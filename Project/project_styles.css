@@ -257,7 +257,7 @@ a {
     flex-wrap: wrap;
 }
 
- .partners-list li {
+.partners-list li {
     display: inline-block;
     margin: 0 100px;
 }
@@ -267,7 +267,11 @@ a {
     height: auto;
     position: relative;
     top: 40px;
-}   
+}  
+
+.partners-list li a {
+    font-family: 'Inter', sans-serif;
+}
 
 .heading{
     width: 100%;
