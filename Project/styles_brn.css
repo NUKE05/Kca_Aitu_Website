@@ -60,16 +60,6 @@ nav a:hover {
     background-position: center center;
 }
 
-
-.banner h1{
-    font-size: 100px;
-    letter-spacing: 3px;
-    font-family: 'Inter', sans-serif;
-    color:white;
-    text-align: center;
-    padding:110px 0;
-}
-
 .content {
     width: 100%;
     position: relative;
