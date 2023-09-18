@@ -123,5 +123,6 @@ nav a:hover {
 .read_more hr {
     color: black;
     height: 3px;
-    background-color: black;    
+    background-color: black;
+    border-width: 0;
 }
