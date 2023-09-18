@@ -151,7 +151,8 @@ nav a:hover {
 .read_more hr {
     color: black;
     height: 3px;
-    background-color: black;    
+    background-color: black;  
+    border-width: 0;  
 }
 
 .sliderblock {
@@ -230,10 +231,19 @@ a {
     color: black;
 }
 
+.events table hr {
+    color: black;
+    height: 3px;
+    background-color: black;  
+    border-width: 0;
+    width: 35%;
+    margin-left: 105px;
+}
 
 .partners{
     text-align: left;
 }
+
 .partners h3 {
     color: black;
     text-align: left;
@@ -250,6 +260,7 @@ a {
     padding: 0;
     margin-left: 80px;
 }
+
 .partners-ol{
     padding: 0;
     list-style: none;
