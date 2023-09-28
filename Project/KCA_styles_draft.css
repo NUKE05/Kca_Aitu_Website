@@ -1,0 +1,25 @@
+.navbar-custom {
+    background-color: aliceblue;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+}
+
+body {
+    background-color: #A9DEF9;
+    overflow-x: hidden;
+}
+
+.scroll-limit {
+    overflow-x: auto;
+}
+
+.main_content button{
+    background-color: #F7D6E0;
+    border-color: black;
+    color: black;
+    white-space: pre;
+}
+
+
