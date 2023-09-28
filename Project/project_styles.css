@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    font-family: 'Inter', sans-serif;
 }
 body {
     color: black;
@@ -108,7 +108,6 @@ nav a:hover {
 
 .content p {
     padding: 1.6%;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     line-height: 120%;
     margin-left: 8.3%;
@@ -151,7 +150,8 @@ nav a:hover {
 .read_more hr {
     color: black;
     height: 3px;
-    background-color: black;    
+    background-color: black;  
+    border-width: 0;  
 }
 
 .sliderblock {
@@ -230,10 +230,19 @@ a {
     color: black;
 }
 
+.events table hr {
+    color: black;
+    height: 3px;
+    background-color: black;  
+    border-width: 0;
+    width: 35%;
+    margin-left: 105px;
+}
 
 .partners{
     text-align: left;
 }
+
 .partners h3 {
     color: black;
     text-align: left;
@@ -250,6 +259,7 @@ a {
     padding: 0;
     margin-left: 80px;
 }
+
 .partners-ol{
     padding: 0;
     list-style: none;
@@ -257,7 +267,7 @@ a {
     flex-wrap: wrap;
 }
 
- .partners-list li {
+.partners-list li {
     display: inline-block;
     margin: 0 100px;
 }
@@ -267,7 +277,11 @@ a {
     height: auto;
     position: relative;
     top: 40px;
-}   
+}  
+
+.partners-list li a {
+    font-family: 'Inter', sans-serif;
+}
 
 .heading{
     width: 100%;

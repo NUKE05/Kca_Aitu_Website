@@ -60,16 +60,6 @@ nav a:hover {
     background-position: center center;
 }
 
-
-.banner h1{
-    font-size: 100px;
-    letter-spacing: 3px;
-    font-family: 'Inter', sans-serif;
-    color:white;
-    text-align: center;
-    padding:110px 0;
-}
-
 .content {
     width: 100%;
     position: relative;
@@ -133,5 +123,6 @@ nav a:hover {
 .read_more hr {
     color: black;
     height: 3px;
-    background-color: black;    
+    background-color: black;
+    border-width: 0;
 }
