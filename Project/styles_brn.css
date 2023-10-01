@@ -8,7 +8,3 @@ body {
     background-color: cornsilk;
     overflow-x: hidden;
 }
-
-.scroll-limit {
-    overflow-x: auto;
-}
