@@ -1,128 +1,14 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/*rgb(255, 250, 205);*/ 
+
+.navbar-custom {
+    background-color: rgb(255, 250, 205);
 }
+
 body {
-    color: black;
-    background-color: white;
+    background-color: cornsilk;
+    overflow-x: hidden;
 }
 
-header {
-    height: 60px;
-    background-color:cornsilk;
-    width: 100%;
-    z-index: 12;
-    position: fixed;
-
-}
-
-.logo {
-    position: fixed;
-    margin-left: 40px;
-    margin-top: 11px;
-    width: 39px;
-}
-
-nav {
-    float: right;
-    line-height: 65px;
-    margin-right: 50px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;
-    margin: 0 10px;
-    letter-spacing: 2px;
-    font-weight: 100;
-    line-height: 3%;
-}
-
-nav a:hover {
-    color: orange;
-}
-
-.active {
-    color:orange;
-}
-
-.banner {
-    width: 100%;
-    height: 450px;
-    position: fixed;
-    top: 60px;
-    background-image: url(project_images/banner_brn.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-}
-
-.content {
-    width: 100%;
-    position: relative;
-    top: 350px;
-    background-color:rgb(255, 250, 205); 
-    height: 1050px;
-}
-
-.content h2 {
-    text-align: left;
-    padding-top: 3%;
-    letter-spacing: 1px;
-    margin-left: 10%;
-    font-size: 115px;
-    font-weight: 1500;
-    font-family: 'Inter', sans-serif;
-}
-
-.content h3 {
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 1px;
-    color: black;
-    margin-top:65px;
-    margin-left: 11%;
-    font-size: 70px;
-}
-
-.content p {
-    padding: 1.6%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    line-height: 120%;
-    margin-left: 8.3%;
-    margin-top: 18px;
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-}
-.content video{
-    width:640px;
-    height:360px;
-    margin-left: 800px; 
-    margin-top:-270px;
-    border-radius: 10px; 
-    border-color: black;
-    position: relative;
-}
-
-.read_more {
-    margin-left: 50%;
-    float: left;
-    margin-top: 20px;
-}
-.read_more a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    white-space: pre;
-}
-.read_more hr {
-    color: black;
-    height: 3px;
-    background-color: black;
-    border-width: 0;
+.scroll-limit {
+    overflow-x: auto;
 }
