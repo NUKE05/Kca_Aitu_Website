@@ -282,3 +282,28 @@ a {
 .partners-list li a {
     font-family: 'Inter', sans-serif;
 }
+
+
+/* .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: salmon;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: salmon;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+} */
+
