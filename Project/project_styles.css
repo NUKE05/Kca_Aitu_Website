@@ -283,71 +283,8 @@ a {
     font-family: 'Inter', sans-serif;
 }
 
-.heading{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 80px auto;
-}
-.heading h1{
-    font-size: 50px;
-    color: black;
-    margin-bottom: 25px;
-    position: relative;
-}
 
-
-.heading p{
-    font-size: 18px;
-    color: black;
-    margin-bottom: 35px;
-}
-
-.container{
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
-
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.about-image{
-    flex: 1;
-    margin-right: 40px;
-    overflow: hidden;
-}
-.about-image img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transition: 0.5s ease;
-}
-
-.about-image:hover img{
-    transform: scale(1.1);
-}
-
-.about-content{
-    flex: 1;
-}
-.about-content h2{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.about-content p{
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.about-content .read-more{
+/* .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: salmon;
@@ -358,52 +295,15 @@ a {
     margin-top: 15px;
     transition: 0.3s ease;
 }
-
-.about-content .read-more:hover{
-    background-color: rgb(219, 30, 87);
-}
-
-
-
-.title h1{
-    text-align: center;
-    padding-top: 50px;
-    font-size: 42px;
-}
-
-
-
-.columns{
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 75px auto;
-    text-align: center;
-}
-
-.column{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 20px;
-    padding: 20px 20px;
-    background-color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.column h2{
-    font-size: 28px;
-    color: salmon;
-    margin-bottom: 20px;
-}
-
-.column p{
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: salmon;
+    color: white;
     font-size: 19px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: black;
-}
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+} */
+
