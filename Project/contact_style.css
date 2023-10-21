@@ -1,3 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contact-form {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-form h1 {
+    font-weight: bold;
+}
+
+.contact-form .card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
 .navbar-custom {
     background-color: cornsilk;
 }
