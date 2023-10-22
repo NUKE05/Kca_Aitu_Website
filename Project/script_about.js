@@ -13,7 +13,7 @@ const achievements = [
     }
 ];
 
-function populateAchievements() {
+function addAchievements() {
     const achievementsContainer = document.getElementById('achievements-container');
 
     achievements.forEach((achievement, index) => {
@@ -33,5 +33,5 @@ function populateAchievements() {
     });
 }
 document.addEventListener('DOMContentLoaded', () => {
-    populateAchievements();
+    addAchievements();
 });
