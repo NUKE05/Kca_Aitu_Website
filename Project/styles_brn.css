@@ -8,3 +8,10 @@ body {
     background-color: cornsilk;
     overflow-x: hidden;
 }
+
+#toggle-video-button {
+    background-color: black;
+    border-color: black;
+    color: cornsilk;
+    white-space: pre;
+  }

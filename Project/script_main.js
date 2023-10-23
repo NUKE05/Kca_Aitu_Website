@@ -30,6 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(newIndex);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const registerButton = document.getElementById('registerButton');
+  
+    registerButton.addEventListener('click', function () {
+      const userInput = prompt('Please enter your Telegram ID or Email:');
+  
+      if (userInput !== null && userInput !== '') {
+        alert('Registration successful. Telegram ID or Email: ' + userInput);
+      }
+    });
+  });
+  
 /*
 // Function to calculate the time remaining until Pepero Day
 function getTimeRemaining(targetDate) {

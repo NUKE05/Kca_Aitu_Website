@@ -54,8 +54,12 @@ body {
 }
 
 .contact-form button{
-    color: #fff;
-    background: rgb(243, 73, 107);
+    /* color: #fff;
+    background: rgb(243, 73, 107); */
+    background-color: #F7D6E0;
+    border-color: black;
+    color: black;
+    white-space: pre;
     font-weight: 600;
     transition: 0.3s ease;
 }

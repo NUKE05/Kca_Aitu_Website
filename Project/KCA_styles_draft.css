@@ -102,3 +102,10 @@ body {
 .time small {
   font-size: 1em;
 }
+
+  #registerButton{
+    background-color: #F7D6E0;
+    border-color: black;
+    color: black;
+    white-space: pre;
+}
