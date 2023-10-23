@@ -18,10 +18,10 @@ function addAchievements() {
 
     achievements.forEach((achievement, index) => {
         const achievementElement = document.createElement('div');
-        achievementElement.classList.add('col-md-3', 'bg-white', 'rounded');
+        achievementElement.classList.add('col-md-3', 'rounded');
 
         const titleElement = document.createElement('h2');
-        titleElement.style.color = 'salmon';
+        titleElement.style.color = '#FFC0CB';
         titleElement.textContent = achievement.title;
 
         const descriptionElement = document.createElement('p');

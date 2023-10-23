@@ -39,11 +39,6 @@ body {
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #0056b3;
-}
-
-
 .navbar-custom {
     background-color: #A9DEF9;
 }
