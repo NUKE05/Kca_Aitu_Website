@@ -12,53 +12,61 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
-            <div class="container-fluid">
-              <a class="navbar-brand ms-3" href="project_KCA_boot_draft.html">
-                <img src="project_images/kca_logo.png" width="40" alt="Alt">
-              </a>
-              <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item mx-5">
-                    <a class="nav-link" href="project_main.html">Home</a>
-                  </li>
-                  <li class="nav-item mx-5">
-                    <a class="nav-link" href="BRN.html">BRN</a>
-                  </li>
-                  <li class="nav-item mx-5">
-                    <a class="nav-link active" aria-current="page" href="#">Contacts</a>
-                  </li>
-                  <li class="nav-item dropdown mx-5">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                      About US
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="AboutUs.html">Можете</a></li>
-                      <li><a class="dropdown-item" href="AboutUs.html">поставить</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="AboutUs.html">100%?</a></li>
-                    </ul>
-                  </li>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="project_KCA_boot_draft.html">
+            <img src="project_images/kca_logo.png" width="40" alt="Alt">
+          </a>
+          <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-5">
+                <a class="nav-link active" aria-current="page" href="project_main.html">Home</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="BRN.html">BRN</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="AboutUs.html">About us</a>
+              </li>
+              <li class="nav-item dropdown mx-5">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Contacts.html">Register</a></li>
+                  <li><a class="dropdown-item" href="Contacts.html">Login</a></li>
+                  <li><hr class="dropdown-divider"></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="contact-form my-3">
         <h1>GET IN TOUCH</h1>
         <div class="card">
-            <h2>Contact Us</h2>
+            <h2>Register</h2>
             <form id="contactForm">
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Nickname">
                 </div>
                 <div class="mb-3">
                     <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
                 </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                  <div id="password-feedback" class="feedback"></div>
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="passwordValidation" placeholder="Validate Your Password">
+                  <div id="passwordValidation-feedback" class="feedback"></div>
+                </div>
+
                 <div class="mb-3">
                     <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
                 </div>

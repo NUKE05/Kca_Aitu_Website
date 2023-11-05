@@ -41,6 +41,42 @@ function validateMessage() {
     }
 }
 
+const passwordInput = document.getElementById('password');
+const passwordValidationInput = document.getElementById('passwordValidation');
+const passwordFeedback = document.getElementById('password-feedback');
+const passwordValidationFeedback = document.getElementById('passwordValidation-feedback');
+
+passwordInput.addEventListener('blur', validatePassword);
+passwordValidationInput.addEventListener('blur', validatePasswordValidation);
+
+function validatePassword() {
+    const passwordValue = passwordInput.value.trim();
+    if (passwordValue.length < 8) {
+        passwordInput.classList.add('is-invalid');
+        passwordInput.classList.remove('is-valid');
+        passwordFeedback.textContent = 'Password must be at least 8 characters long.';
+    } else {
+        passwordInput.classList.remove('is-invalid');
+        passwordInput.classList.add('is-valid');
+        passwordFeedback.textContent = '';
+    }
+}
+
+function validatePasswordValidation() {
+    const passwordValue = passwordInput.value.trim();
+    const passwordValidationValue = passwordValidationInput.value.trim();
+    
+    if (passwordValidationValue !== passwordValue) {
+        passwordValidationInput.classList.add('is-invalid');
+        passwordValidationInput.classList.remove('is-valid');
+        passwordValidationFeedback.textContent = 'Passwords do not match.';
+    } else {
+        passwordValidationInput.classList.remove('is-invalid');
+        passwordValidationInput.classList.add('is-valid');
+        passwordValidationFeedback.textContent = '';
+    }
+}
+
 sendButton.addEventListener('click', submitForm);
 
 function submitForm() {
