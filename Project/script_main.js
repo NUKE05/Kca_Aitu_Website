@@ -109,3 +109,24 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+function toggleScrollToTopButton() {
+    if (window.pageYOffset > 500) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+}
+
+window.addEventListener("scroll", toggleScrollToTopButton);
+
+scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+toggleScrollToTopButton();
