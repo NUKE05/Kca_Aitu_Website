@@ -77,7 +77,36 @@ function validatePasswordValidation() {
     }
 }
 
-sendButton.addEventListener('click', submitForm);
+const UserData = [];
+
+function handleSubmit(event) {
+  event.preventDefault(); 
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  if (isUserAlreadyRegistered(name)) {
+    alert(`Sorry, you are already registered with the username: ${name}`);
+  } else {
+    const user = {
+      name,
+      password,
+      email
+    };
+
+    UserData.push(user);
+
+    alert(`Hello ${name}. That's your password: ${password}`);
+
+    document.getElementById('contactForm').reset();
+  }
+}
+
+function isUserAlreadyRegistered(name) {
+  return UserData.some(user => user.name === name);
+}
+
+document.getElementById('sendButton').addEventListener('click', handleSubmit);
 
 function submitForm() {
     const nameValue = nameInput.value.trim();
@@ -87,15 +116,15 @@ function submitForm() {
     if (nameValue === '' || emailValue === '' || messageValue === '') {
         alert('Please fill in all required fields.');
     } else {
-        alert('Form submitted successfully!');
+        alert('Form submitted successfully' + userData[0]);
     }
 }
 
 function redirectWithAlert(link, destination) {
-        if (alert('You will be redirected to ' + destination + '.')) {
-            window.location.href = link;
-        }
+    if (alert('You will be redirected to ' + destination + '.')) {
+        window.location.href = link;
     }
+}
 
 const instagramLink = document.getElementById('instagram-link');
 const tiktokLink = document.getElementById('tiktok-link');
