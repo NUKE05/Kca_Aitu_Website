@@ -1,56 +1,82 @@
-document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("DOMContentLoaded", () => {
-        for (let cell of document.querySelectorAll(".editable td")) {
-            cell.ondblclick = () => editable.edit(cell);
-        }
-    });
-    var editable = {
-        selected : null, 
-        value : "", 
-       
-        edit : cell => {
-          cell.ondblclick = "";
+var data = JSON.parse(localStorage.getItem("myData"));
 
-          cell.contentEditable = true;
-          cell.focus();
+if (data && data.length > 0) {
+  var table = document.getElementById("editable");
+  data.forEach(function(entry) {
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = entry.email;
+    cell2.innerHTML = entry.password;
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     window.addEventListener("DOMContentLoaded", () => {
+//         for (let cell of document.querySelectorAll(".editable td")) {
+//             cell.ondblclick = () => editable.edit(cell);
+//         }
+//     });
+//     var editable = {
+//         selected : null, 
+//         value : "", 
        
-          cell.classList.add("edit");
-          editable.selected = cell;
-          editable.value = cell.innerHTML;
+//         edit : cell => {
+//           cell.ondblclick = "";
+
+//           cell.contentEditable = true;
+//           cell.focus();
        
-          window.addEventListener("click", editable.close);
-          cell.onkeydown = evt => {
-            if (evt.key=="Enter" || evt.key=="Escape") {
-              editable.close(evt.key=="Enter" ? true : false);
-              return false;
-            }
-          };
-        },
-    };
-close : evt => { if (evt.target != editable.selected) {
-    if (evt === false) {
-      editable.selected.innerHTML = editable.value;
-    }
+//           cell.classList.add("edit");
+//           editable.selected = cell;
+//           editable.value = cell.innerHTML;
+       
+//           window.addEventListener("click", editable.close);
+//           cell.onkeydown = evt => {
+//             if (evt.key=="Enter" || evt.key=="Escape") {
+//               editable.close(evt.key=="Enter" ? true : false);
+//               return false;
+//             }
+//           };
+//         },
+//     };
+// close : evt => { if (evt.target != editable.selected) {
+//     if (evt === false) {
+//       editable.selected.innerHTML = editable.value;
+//     }
    
-    window.getSelection().removeAllRanges();
-    editable.selected.contentEditable = false;
+//     window.getSelection().removeAllRanges();
+//     editable.selected.contentEditable = false;
   
-    window.removeEventListener("click", editable.close);
-    let cell = editable.selected;
-    cell.onkeydown = "";
-    cell.ondblclick = () => editable.edit(cell);
+//     window.removeEventListener("click", editable.close);
+//     let cell = editable.selected;
+//     cell.onkeydown = "";
+//     cell.ondblclick = () => editable.edit(cell);
    
-    editable.selected.classList.remove("edit");
-    editable.selected = null;
-    editable.value = "";
+//     editable.selected.classList.remove("edit");
+//     editable.selected = null;
+//     editable.value = "";
    
-    if (evt !== false) {
-      console.log(cell.innerHTML);
+//     if (evt !== false) {
+//       console.log(cell.innerHTML);
       // check value?
       // send value to server?
       // update calculations in table?
-    }
-  }}
+ 
 
 //   function createTableFromObjects(data) {
 //     const table = document.createElement('table');
@@ -89,27 +115,27 @@ close : evt => { if (evt.target != editable.selected) {
 
 //   const tableContainer = document.getElementById('table-container');
 //   tableContainer.appendChild(table);
-});
+
 
 // import { UserData } from './registration.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-    const userData = [
-        { userName: "hop", email: "ademashauenova@gmail.com", password: "" },
-        { userName: "fdhj", email: "221908@astanait.edu.kz", password: "" },
-    ];
+// document.addEventListener("DOMContentLoaded", () => {
+//     const userData = [
+//         { userName: "hop", email: "ademashauenova@gmail.com", password: "" },
+//         { userName: "fdhj", email: "221908@astanait.edu.kz", password: "" },
+//     ];
 
-    // console.log(UserData); 
+//     // console.log(UserData); 
 
-    const tableBody = document.getElementById("user-table-body");
+//     const tableBody = document.getElementById("user-table-body");
 
-    userData.forEach(user => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-            <td>${user.userName}</td>
-            <td>${user.email}</td>
-            <td>${user.password}</td>
-        `;
-        tableBody.appendChild(row);
-    });
-});
+//     userData.forEach(user => {
+//         const row = document.createElement("tr");
+//         row.innerHTML = `
+//             <td>${user.userName}</td>
+//             <td>${user.email}</td>
+//             <td>${user.password}</td>
+//         `;
+//         tableBody.appendChild(row);
+//     });
+// });

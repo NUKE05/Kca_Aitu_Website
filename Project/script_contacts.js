@@ -85,6 +85,12 @@ function handleSubmit(event) {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
+localStorage.setItem('name',name);
+localStorage.setItem('email', email)
+localStorage.setItem('password',password)
+
+
+
   if (isUserAlreadyRegistered(name)) {
     alert(`Sorry, you are already registered with the username: ${name}`);
   } else {
