@@ -108,7 +108,6 @@ function isUserAlreadyRegistered(name) {
 
 document.getElementById('sendButton').addEventListener('click', handleSubmit);
 
-<<<<<<< HEAD
 function submitForm() {
     const nameValue = nameInput.value.trim();
     const emailValue = emailInput.value.trim();
@@ -121,8 +120,6 @@ function submitForm() {
     }
 }
 
-=======
->>>>>>> 64440d441de743c87905af24a033632211d175a0
 function redirectWithAlert(link, destination) {
     if (alert('You will be redirected to ' + destination + '.')) {
         window.location.href = link;
