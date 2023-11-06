@@ -102,6 +102,16 @@ function handleSubmit(event) {
   }
 }
 
+
+const userData = [
+    { name: "User1", email: "user1@example.com", password: "password1" },
+    { name: "User2", email: "user2@example.com", password: "password2" },
+    // Add more user data as needed
+];
+
+export { userData };
+
+
 function isUserAlreadyRegistered(name) {
   return UserData.some(user => user.name === name);
 }
@@ -116,9 +126,11 @@ function submitForm() {
     if (nameValue === '' || emailValue === '' || messageValue === '') {
         alert('Please fill in all required fields.');
     } else {
-        alert('Form submitted successfully' + userData[0]);
+        alert('Form submitted successfully' + UserData[0]);
     }
 }
+
+export { UserData };
 
 function redirectWithAlert(link, destination) {
     if (alert('You will be redirected to ' + destination + '.')) {
