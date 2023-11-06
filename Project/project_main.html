@@ -21,14 +21,23 @@
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                  <li class="nav-item mx-5">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <li class="nav-item dropdown mx-5">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#section-1">Aitu KCA</a></li>
+                      <li><a class="dropdown-item" href="#section-2">Major Events</a></li>
+                      <li><a class="dropdown-item" href="#section-3">Pepero Day</a></li>
+                      <li><a class="dropdown-item" href="#section-4">Partners</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
                   </li>
                   <li class="nav-item mx-5">
                     <a class="nav-link" href="BRN.html">BRN</a>
                   </li>
                   <li class="nav-item mx-5">
-                    <a class="nav-link" href="AboutUs.html">About us</a>
+                    <a class="nav-link" href="AboutUs.html">About US</a>
                   </li>
                   <li class="nav-item dropdown mx-5">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
@@ -75,31 +84,34 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </a>
   </div> 
-
-  <section class="main_content">
-    <div class="container my-4">
-      <div class="row">
-        <div class="col col-10 display-1 text-bold mx-3">AITU KCA</div>
-      </div> 
-      <div class="row">
-        <div class="col h3 col-xs-4 text-muted ms-5">Korean Culture Association</div>
-      </div>
-      <div class="row">
-        <div class="col my-1 mx-3 col-md-10 col-sm-12 col-xs-2 col-lg-7">The student club was created with the aim of uniting all lovers of South Korean culture.
-          Thanks to the events that will be held inside and outside the club, students will be able
-          to develop their social skills, broaden their horizons and gain new knowledge in the
-          field of education and culture of the Country of Morning Freshness.</div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm">
-          <button class="btn my-3 btn-lg rounded-pill mx-2"><a class="text-dark text-decoration-none h4" href="https://docs.google.com/forms/d/e/1FAIpQLSe2zpiosHOO-Y2r8Iy6U9026QZ-dP1SxAPKIvckzlLIUruV0w/viewform?fbclid=PAAaZrWsDiiVkQpQDDFbjUF61m1gek2odiB1psXswyX2klSH_URCY_MoxGobo_aem_AfZbhdcKpkn77eZu22YmGlynLeVvfHvepT7wwBsvPJ9rAgWJGgIufiX5fL8601ru0y8">   JOIN CLUB   </a></button>
-        </div>
-        <div class="col-md-4 col-sm-6 my-4 d-none d-sm-block">
-          <a class="link-opacity-75 mr-auto mx-4 text-dark h4" href="AboutUs.html">READ MORE↗</a>
-        </div>
-      </div>
-  </section>
   
+  <div id="section-1" class="section">
+    <section class="main_content">
+      <div class="container my-4">
+        <div class="row">
+          <div class="col col-10 display-1 text-bold mx-3">AITU KCA</div>
+        </div> 
+        <div class="row">
+          <div class="col h3 col-xs-4 text-muted ms-5">Korean Culture Association</div>
+        </div>
+        <div class="row">
+          <div class="col my-1 mx-3 col-md-10 col-sm-12 col-xs-2 col-lg-7">The student club was created with the aim of uniting all lovers of South Korean culture.
+            Thanks to the events that will be held inside and outside the club, students will be able
+            to develop their social skills, broaden their horizons and gain new knowledge in the
+            field of education and culture of the Country of Morning Freshness.</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm">
+            <button class="btn my-3 btn-lg rounded-pill mx-2"><a class="text-dark text-decoration-none h4" href="https://docs.google.com/forms/d/e/1FAIpQLSe2zpiosHOO-Y2r8Iy6U9026QZ-dP1SxAPKIvckzlLIUruV0w/viewform?fbclid=PAAaZrWsDiiVkQpQDDFbjUF61m1gek2odiB1psXswyX2klSH_URCY_MoxGobo_aem_AfZbhdcKpkn77eZu22YmGlynLeVvfHvepT7wwBsvPJ9rAgWJGgIufiX5fL8601ru0y8">   JOIN CLUB   </a></button>
+          </div>
+          <div class="col-md-4 col-sm-6 my-4 d-none d-sm-block">
+            <a class="link-opacity-75 mr-auto mx-4 text-dark h4" href="AboutUs.html">READ MORE↗</a>
+          </div>
+        </div>
+    </section>
+</div>
+
+<div id="section-2" class="section">
   <div class="container">
     <div class="row">
       <div class="col col-10 display-2 mx-3 my-5">MAJOR EVENTS</div>
@@ -134,7 +146,9 @@
       </table>
     </div>
   </div>
+</div>
 
+<div id="section-3" class="section">
   <div class="container">
     <div class="row">
       <div class="col col-10 display-2 mx-3 my-5">PEPERO DAY COUNTDOWN</div>
@@ -166,18 +180,9 @@
       </div>
     </div>
   </div>
-
-<div class="container my-4">
-  <!-- <div class="row">
-    <div class="col col-10 display-2 mx-3">Event Registration</div>
-  </div> -->
-  <div class="row">
-    <div class="col-md-6 col-sm-12 mx-3">
-      <button id="registerButton" class="btn my-3 btn-lg rounded-pill mx-2"><a class="text-dark text-decoration-none h4" style="cursor: pointer;">   Register   </a></button>
-    </div>
-  </div>
 </div>
 
+<div id="section-4" class="section">
   <div class="container">
     <div class="row">
       <div class="col col-10 display-2 mx-3 my-5">PARTNERS</div>
@@ -202,12 +207,15 @@
       </div>
     </div>
   </div> 
+</div>
+  
 
-  <div class="container">
-    <div class="row">
-      <div class="col my-5"></div>
-    </div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col my-5"></div>
   </div>
+</div>
   
   <button id="scrollToTopButton">▲</button>
 
