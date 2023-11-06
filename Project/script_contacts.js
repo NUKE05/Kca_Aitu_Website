@@ -82,7 +82,6 @@ document.getElementById("sendButton").addEventListener("click", function() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-  
     var data = {
         name: name,
         email: email,
@@ -90,30 +89,29 @@ document.getElementById("sendButton").addEventListener("click", function() {
     };
 
     var existingData = JSON.parse(localStorage.getItem("myData")) || [];
-    existingData.push(data);
+    if (isUserAlreadyRegistered(email)) {
+        alert('Sorry, you are already registered with this username')
+    }
+    else {
+        existingData.push(data);
+        alert("Registration successful! " + name + "is registered in the system")
+    }
   
     localStorage.setItem("myData", JSON.stringify(existingData));
-    
     
     document.getElementById("name").value = "";
     document.getElementById("email").value= "";
     document.getElementById("password").value = "";
+
+    function isUserAlreadyRegistered(email) {
+        return existingData.some(data => data.email === email)
+    }
+    
   });
-  
-
-
-
-
-
-
-
-
-
-
 function redirectWithAlert(link, destination) {
     if (alert('You will be redirected to ' + destination + '.')) {
         window.location.href = link;
-    }
+    } 
 }
 
 const instagramLink = document.getElementById('instagram-link');
