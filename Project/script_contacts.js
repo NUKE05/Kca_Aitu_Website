@@ -108,18 +108,6 @@ function isUserAlreadyRegistered(name) {
 
 document.getElementById('sendButton').addEventListener('click', handleSubmit);
 
-function submitForm() {
-    const nameValue = nameInput.value.trim();
-    const emailValue = emailInput.value.trim();
-    const messageValue = messageInput.value.trim();
-
-    if (nameValue === '' || emailValue === '' || messageValue === '') {
-        alert('Please fill in all required fields.');
-    } else {
-        alert('Form submitted successfully' + userData[0]);
-    }
-}
-
 function redirectWithAlert(link, destination) {
     if (alert('You will be redirected to ' + destination + '.')) {
         window.location.href = link;
