@@ -91,31 +91,22 @@ close : evt => { if (evt.target != editable.selected) {
 //   tableContainer.appendChild(table);
 });
 
-import { userData } from './script_contacts.js';
+// import { UserData } from './registration.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-    // const userData = [
-    //     { userName: "hop", email: "ademashauenova@gmail.com", password: "" },
-    //     { userName: "fdhj", email: "221908@astanait.edu.kz", password: "" },
-    // ];
+    const userData = [
+        { userName: "hop", email: "ademashauenova@gmail.com", password: "" },
+        { userName: "fdhj", email: "221908@astanait.edu.kz", password: "" },
+    ];
 
-    // import { UserData } from './script_contacts.js'; 
-
-    console.log(userData); 
-
-    if (UserData.length === 0) {
-        console.log("UserData array is empty");
-    } else {
-        console.log("UserData array is not empty");
-    }
-    
+    // console.log(UserData); 
 
     const tableBody = document.getElementById("user-table-body");
 
     userData.forEach(user => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td>${user.name}</td>
+            <td>${user.userName}</td>
             <td>${user.email}</td>
             <td>${user.password}</td>
         `;
