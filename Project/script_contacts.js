@@ -77,54 +77,38 @@ function validatePasswordValidation() {
     }
 }
 
-const UserData = [];
 
-function handleSubmit(event) {
-  event.preventDefault(); 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-
-localStorage.setItem('name',name);
-localStorage.setItem('email', email)
-localStorage.setItem('password',password)
-
-
-
-  if (isUserAlreadyRegistered(name)) {
-    alert(`Sorry, you are already registered with the username: ${name}`);
-  } else {
-    const user = {
-      name,
-      password,
-      email
+document.getElementById("sendButton").addEventListener("click", function() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+  
+    var data = {
+        name: name,
+        email: email,
+        password: password,
     };
 
-    UserData.push(user);
+    var existingData = JSON.parse(localStorage.getItem("myData")) || [];
+    existingData.push(data);
+  
+    localStorage.setItem("myData", JSON.stringify(existingData));
+    
+    
+    document.getElementById("name").value = "";
+    document.getElementById("email").value= "";
+    document.getElementById("password").value = "";
+  });
+  
 
-    alert(`Hello ${name}. That's your password: ${password}`);
 
-    document.getElementById('contactForm').reset();
-  }
-}
 
-function isUserAlreadyRegistered(name) {
-  return UserData.some(user => user.name === name);
-}
 
-document.getElementById('sendButton').addEventListener('click', handleSubmit);
 
-function submitForm() {
-    const nameValue = nameInput.value.trim();
-    const emailValue = emailInput.value.trim();
-    const messageValue = messageInput.value.trim();
 
-    if (nameValue === '' || emailValue === '' || messageValue === '') {
-        alert('Please fill in all required fields.');
-    } else {
-        alert('Form submitted successfully' + UserData[0]);
-    }
-}
+
+
+
 
 function redirectWithAlert(link, destination) {
     if (alert('You will be redirected to ' + destination + '.')) {

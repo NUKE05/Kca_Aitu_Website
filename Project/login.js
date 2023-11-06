@@ -17,20 +17,20 @@
 // });
 
 
-document.getElementById("sendButton").addEventListener("click", function() {
-  var email = document.getElementById("name").value;
-  var password = document.getElementById("password").value;
+// document.getElementById("sendButton").addEventListener("click", function() {
+//   var email = document.getElementById("name").value;
+//   var password = document.getElementById("password").value;
 
-  var data = {
-    email: email,
-    password: password,
-  };
-  var existingData = JSON.parse(localStorage.getItem("myData")) || [];
-  existingData.push(data);
+//   var data = {
+//     email: email,
+//     password: password,
+//   };
+//   var existingData = JSON.parse(localStorage.getItem("myData")) || [];
+//   existingData.push(data);
 
-  localStorage.setItem("myData", JSON.stringify(existingData));
+//   localStorage.setItem("myData", JSON.stringify(existingData));
   
-  document.getElementById("name").value = "";
-  document.getElementById("password").value = "";
-});
+//   document.getElementById("name").value = "";
+//   document.getElementById("password").value = "";
+// });
 
