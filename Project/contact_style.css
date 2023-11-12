@@ -1,5 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-image: url('project_images/sakura.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.kca_log {
+    height: 90px;
+    width: 90px;
 }
 
 .contact-form {
@@ -12,35 +23,56 @@ body {
 }
 
 .contact-form .card {
-    max-width: 600px;
+    max-width: 520px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form-control {
+.input_box {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    border-bottom: 2px solid black;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input_box label {
+    position: absolute;
+    margin-top: 3%;
+    transform: translateX(-220px);
+    transition: all 0.3s ease;
+}
+
+.input_box input:focus + label,
+.input_box input:not(:placeholder-shown) + label {
+    margin-top: -5px; 
+    font-size: 13px; 
+    color: black; 
+}
+
+.input_box input {
+    width: 100%;
+    height: 100%;
+    height: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .d-grid {
     display: grid;
 }
-
-.btn {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .navbar-custom {
-    background-color: #A9DEF9;
+    background-color: transparent;
 }
 
 body {
@@ -48,11 +80,9 @@ body {
     overflow-x: hidden;
 }
 
-.contact-form button{
-    /* color: #fff;
-    background: rgb(243, 73, 107); */
-    background-color: #F7D6E0;
-    border-color: black;
+.contact-form button{ 
+    background-color: aliceblue;
+    border-color: white;
     color: black;
     white-space: pre;
     font-weight: 600;

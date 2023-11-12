@@ -59,6 +59,10 @@
     background-color: aliceblue;
 }
 
+.navbar a.nav-link{
+    margin-left: 35px;
+}
+
 .carousel-inner img {
     object-fit: cover;
 }
@@ -70,6 +74,11 @@ body {
 
 .scroll-limit {
     overflow-x: auto;
+}
+
+.btnLogin-popup {
+    width: 100px;
+    background-color: #F7D6E0;
 }
 
 #readmore {
@@ -88,7 +97,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 30px;
 }
 
 #section-3 {

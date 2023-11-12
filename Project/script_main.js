@@ -50,7 +50,7 @@ const seconds = document.getElementById('seconds');
 
 const currentYear = new Date().getFullYear();
 
-const peperoTime = new Date(`November 11 ${currentYear} 00:00:00`);
+const peperoTime = new Date(`November 25 ${currentYear} 00:00:00`);
 
 // update Countdown timer
 function updateCountdown() {
@@ -90,3 +90,17 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 toggleScrollToTopButton();
+
+function toggleLoginButton() {
+    var loginButton = document.querySelector('.btnLogin-popup');
+    if (window.innerWidth <= 992) {
+        loginButton.style.display = 'none'; 
+    } else {
+        loginButton.style.display = 'inline-block'; 
+    }
+}
+toggleLoginButton();
+
+window.addEventListener('resize', function() {
+    toggleLoginButton();
+});
