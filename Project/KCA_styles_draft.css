@@ -81,6 +81,12 @@ body {
     background-color: #F7D6E0;
 }
 
+.btnLogin-popup:hover {
+    background-color: aliceblue;
+    transition-delay: 0.4s; /* delays for 1 second */
+    -webkit-transition-delay: 0.4s;
+}
+
 #readmore {
     white-space: pre-wrap;
     line-height: 35px;
