@@ -4,6 +4,10 @@
     margin:0;
     color:white;
 }
+.btnLogin-popup {
+    width: 100px;
+    background-color: white;
+}
 h1{
     font-size: 5rem;
     font-weight: 500;
@@ -166,13 +170,6 @@ body {
     overflow-x: hidden;
 }
 
-#toggle-video-button {
-    background-color: black;
-    margin-left: 10rem;;
-    border-color: black;
-    color: cornsilk;
-    white-space: pre;
-  }
 #enjoy-text{
     color:black;
 }
