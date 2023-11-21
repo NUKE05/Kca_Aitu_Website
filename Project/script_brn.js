@@ -1,25 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    function toggleVideoAndText() {
-        const videoContainer = document.getElementById('video-container');
-        const enjoyText = document.getElementById('enjoy-text');
-        const toggleButton = document.getElementById('toggle-video-button');
+function changeFontSize(element, increase) {
+    // Get the current font size
+    var currentSize = parseInt(window.getComputedStyle(element).fontSize);
 
-        if (videoContainer && enjoyText && toggleButton) {
-            if (videoContainer.style.display === 'none') {
-                videoContainer.style.display = 'block';
-                enjoyText.style.display = 'block';
-                toggleButton.textContent = '   Hide preformance video   ';
-            } else {
-                videoContainer.style.display = 'none';
-                enjoyText.style.display = 'none';
-                toggleButton.textContent = '   Watch performance video   ';
-            }
-        }
+    // Set the new font size based on whether to increase or decrease
+    var newSize = increase ? currentSize + 3 : currentSize - 3;
+
+    // Apply the new font size to the element
+    element.style.fontSize = newSize + "px";
+}
+function changeStyle(element, hover) {
+    if (hover) {
+        element.style.color = "cornsilk";
+    } else {
+        
+        element.style.color = "white";
     }
-
-    const toggleVideoButton = document.getElementById('toggle-video-button');
-
-    if (toggleVideoButton) {
-        toggleVideoButton.addEventListener('click', toggleVideoAndText);
-    }
-});
+}

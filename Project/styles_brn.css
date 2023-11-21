@@ -11,9 +11,14 @@
 h1{
     font-size: 5rem;
     font-weight: 500;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
     padding-top: 3rem;
+}
+.hover-text {
+    font-size: 5rem;
+    font-weight: 500;
+    transition: font-size 0.4s ease-out;
 }
 h3{
     font-size: 4.5rem;
@@ -51,7 +56,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
 .container{
     position: relative;
     place-items: center; 
@@ -59,9 +63,6 @@ img{
 .thumbnail{
     width: 80%;
     height: auto;
-    justify-content: center;
-    align-items: center;
-    place-items: center;
 }
 .grid{
     display: grid;
@@ -85,46 +86,7 @@ img{
     text-decoration: none;
 }
 /*BANNER*/
-.banner{
-    position:relative;
-}
-.banner_img{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 900px;
-    object-fit:cover;
-    object-position: center;
-}
-.banner_container{
-    position: relative;
-    padding-top: 3rem;
-    row-gap: 3rem;
-}
 
-.banner_title{
-    font-size:500%;
-}
-.banner_title2{
-    font-size:400%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-.banner_description{
-    margin-bottom: 4rem;
-    color:white;
-    text-align: left;
-}
-.button{
-    outline: none;
-    border: none;
-}
-.banner_cards{
-    grid-template-columns: 200px;
-    justify-content: center;
-}
 .banner_card{
     position: relative;
     overflow: hidden;
