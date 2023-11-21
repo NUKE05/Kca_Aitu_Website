@@ -8,6 +8,7 @@ function changeFontSize(element, increase) {
     // Apply the new font size to the element
     element.style.fontSize = newSize + "px";
 }
+/*
 function changeStyle(element, hover) {
     if (hover) {
         element.style.color = "cornsilk";
@@ -16,3 +17,4 @@ function changeStyle(element, hover) {
         element.style.color = "white";
     }
 }
+*/
