@@ -36,20 +36,27 @@ h1, h3, p{
     font-weight: 600;
     text-transform: capitalize;
 }
+.sec-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: black;
+    border: 0.1875rem solid white;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 .main-btn:hover {
     background-color: black;
     color: white;
     border: 0.1875rem solid white;
 }
-/*
-.video-container {
-    display: inline-block;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.sec-btn:hover {
+    background-color: cornsilk;
+    color: black;
+    border: 0.1875rem solid black;
 }
-.shadow-video {
-    width: 100%; 
-}*/
 html{
     scroll-behavior: smooth;
 }
@@ -107,6 +114,6 @@ body {
     overflow-x: hidden;
 }
 
-#enjoy-text{
+.dark-text{
     color:black;
 }

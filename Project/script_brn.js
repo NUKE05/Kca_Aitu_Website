@@ -8,6 +8,10 @@ function changeFontSize(element, increase) {
     // Apply the new font size to the element
     element.style.fontSize = newSize + "px";
 }
+let button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+     console.log("Button clicked!");
+});
 /*
 function changeStyle(element, hover) {
     if (hover) {
@@ -18,3 +22,10 @@ function changeStyle(element, hover) {
     }
 }
 */
+
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}

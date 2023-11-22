@@ -69,7 +69,7 @@
                 Девиз: <q>Сдохни или Умри</q></p>
               </div>
               <div class="mt-4">
-                <button class="main-btn rounded-pill">JOIN CLUB</button>
+                <button class="main-btn rounded-pill" onclick="scrollToSection('info')">JOIN CLUB</button>
               </div>
             </div>
            </div> 
@@ -104,19 +104,58 @@
         </div>
       </div>
     </section>
-    <!--video-->
-    <div class="container my-3 pt-5 pb-5">
+    <section id="info">
+      <div class="container my-5 pt-5 pb-5">
+        <!--join club-->
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center display-2 my-3">
-              <strong id="enjoy-text" class="mx-auto pl-3">ENJOY THE VIDEO!</strong>
+          <div class="col-lg-6 col-md-6 col-sm-12 my-3">
+            <div class="col-lg-6 col-md-6 mx-auto">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="project_images/Adina_lido.JPG" class="d-block w-80 rounded" alt="slide1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="project_images/Adina_lido.JPG" class="d-block w-80 rounded" alt="slide2">
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="video-container col-lg-6 col-md-6 col-sm-12 my-3">
-              <video class="video mx-auto d-flex justify-content-center rounded shadow-video" width="85%" height="auto" loop controls muted>
-                <source src="project_images/brn_vid.mp4" type="video/mp4">
-              </video>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center my-3 my-auto">
+            <div class="display-3 my-3">
+              <strong class="mx-auto dark-text">HOW TO JOIN BRN?</strong>
             </div>
+            <div class="col-lg-11 col-md-11 py-3 dark-text text-start">
+              <p class=" dark-text my-3"><strong class="dark-text">BULTAOREUNE</strong> Igniting the Stage with <strong class="dark-text">100</strong> Strong Members!
+                Join the electrifying experience of BULTAOREUNE, a dynamic dance troupe that takes center stage at various University events.</p>
+              <p><strong class="dark-text my-2">REQUIREMENTS TO JOIN BULTAOREUNE:</strong></p>
+              <ol class="my-3 pb-1">
+                <li class="dark-text my-1">Be a student of <strong class="dark-text">AITU</strong> to be eligible for BULTAOREUNE membership.</li>
+                <li class="dark-text my-1">Be <strong class="dark-text">PASSIONATE</strong> to dance! Fuel the stage with your enthusiasm!</li>
+                <li class="dark-text my-1">Pass the audition held annually in <strong class="dark-text">September</strong>, showcasing your exceptional dance skills and creativity.</li>
+              </ol> 
+            </div>
+            <div class="col-4 col-lg-4 col-md-2 col-sm-10">
+              <button class="sec-btn rounded-pill ">ASK QUESTION</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <!--video-->
+      <div class="container my-3 pt-5 pb-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center display-3 my-3">
+            <strong class="mx-auto pl-3 dark-text">ENJOY THE VIDEO!</strong>
+          </div>
+          <div class="video-container col-lg-6 col-md-6 col-sm-12 my-3">
+            <video class="video mx-auto d-flex justify-content-center rounded shadow-video" width="85%" height="auto" loop controls muted>
+              <source src="project_images/brn_vid.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="script_brn.js"></script>
