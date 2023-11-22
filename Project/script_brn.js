@@ -29,3 +29,25 @@ function scrollToSection(sectionId) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+/*
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+function toggleScrollToTopButton() {
+    if (window.pageYOffset > 100) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+}
+
+window.addEventListener("scroll", toggleScrollToTopButton);
+
+scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+toggleScrollToTopButton();
+*/
