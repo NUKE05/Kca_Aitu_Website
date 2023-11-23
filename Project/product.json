@@ -1,178 +1,178 @@
 [
     {
         "id": 1,
-        "name":" poster",
-        "price": 200,
+        "name":" Poster \"Twenty-Five Twenty-One\" ",
+        "price": 800,
         "category": "Posters",
         "image": "project_images/photo_2023-11-23_16-58-43.jpg"
     },
     {
         "id": 2,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"Jungkook-Seven\" ",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/photo_2023-11-23_16-58-51.jpg"
     },
     {
         "id": 3,
-        "name":" poster",
-        "price": 200,
+        "name":" Poster \"Weak Hero Class\" ",
+        "price": 800,
         "category": "Posters",
         "image": "project_images/photo_2023-11-23_16-58-35.jpg"
     },
     {
         "id": 4,
-        "name":" stickers",
-        "price": 200,
+        "name":" Stickers \"Cha Eun Woo\" ",
+        "price": 300,
         "category": "Stickers",
         "image": "project_images/photo_2023-11-23_16-58-47.jpg"
     },
     {
         "id": 5,
-        "name":" binder",
-        "price": 200,
+        "name":" Binder for cards",
+        "price": 1200,
         "category": "Binders",
         "image": "project_images/photo_2023-11-23_22-59-12.jpg"
     },
     {
         "id": 6,
-        "name":" poster",
-        "price": 200,
+        "name":" Poster \"Agust D - Daechwita",
+        "price": 850,
         "category": "Posters",
         "image": "project_images/photo_2023-11-23_22-59-17.jpg"
     },
     {
         "id": 7,
-        "name":" poster",
-        "price": 200,
+        "name":" Poster \"Stray Kids\" ",
+        "price": 800,
         "category": "Posters",
         "image": "project_images/photo_2023-11-23_22-59-22.jpg"
     },
     {
         "id": 8,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"Stray Kids\" ",
+        "price": 600,
         "category": "Cards",
         "image": "project_images/photo_2023-11-23_22-59-26.jpg"
     },
     {
         "id": 9,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"Jennie\"",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/card1.jpeg"
     },   {
         "id": 10,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"(G)I-dle\"",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/card2.jpeg"
     },
     {
         "id": 11,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"Enhypen\"",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/card3.jpeg"
     },
     {
         "id": 12,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"TXT\"",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/card4.jpeg"
     },
     {
         "id": 13,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"Lisa\"",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/card5.jpeg"
     },
     {
         "id": 14,
-        "name":" cards set",
-        "price": 200,
+        "name":" Cards \"Nayen\" ",
+        "price": 500,
         "category": "Cards",
         "image": "project_images/card6.jpeg"
     },
     {
         "id": 15,
-        "name":" album",
-        "price": 200,
+        "name":" Album \"Answer - Enhypen\"",
+        "price": 11000,
         "category": "Albums",
         "image": "project_images/al1.jpeg"
     },
     {
         "id": 16,
-        "name":" album",
-        "price": 200,
+        "name":" Album \"Present: You - GOT7\"",
+        "price": 14000,
         "category": "Albums",
         "image": "project_images/al2.jpeg"
     },
     {
         "id": 17,
-        "name":" album",
-        "price": 200,
+        "name":" Album \"FREEFALL - TXT\"",
+        "price": 16000,
         "category": "Albums",
         "image": "project_images/al3.jpeg"
     },
     {
         "id": 18,
-        "name":" album",
-        "price": 200,
+        "name":" Album \"Square Up - Blackpink\" ",
+        "price": 17000,
         "category": "Albums",
         "image": "project_images/al4.jpeg"
     },
     {
         "id": 19,
-        "name":" album",
-        "price": 200,
+        "name":" Album \"Between 1&2 - Twice\"",
+        "price": 11000,
         "category": "Albums",
         "image": "project_images/al5.jpeg"
     },
     {
         "id": 20,
-        "name":" album",
-        "price": 200,
+        "name":" Album \"Wings - BTS\"",
+        "price": 15000,
         "category": "Albums",
         "image": "project_images/al6.jpeg"
     },
     {
         "id": 21,
-        "name":" food",
-        "price": 200,
+        "name":" Fish-shaped bread (Bungeoppang)",
+        "price": 4000,
         "category": "Food",
         "image": "project_images/f1.jpeg"
     },
     {
         "id": 22,
-        "name":" food",
-        "price": 200,
+        "name":" Banana Milk",
+        "price": 1800,
         "category": "Food",
         "image": "project_images/f2.jpeg"
     },   {
         "id": 23,
-        "name":" food",
-        "price": 200,
+        "name":" Nori \"MASITA\"",
+        "price": 2400,
         "category": "Food",
         "image": "project_images/f3.jpeg"
     },   {
         "id": 24,
-        "name":" food",
-        "price": 200,
+        "name":" Ramen \"Samyang Carbonara\"",
+        "price": 1600,
         "category": "Food",
         "image": "project_images/f4.jpeg"
     },   {
         "id": 25,
-        "name":" food",
-        "price": 200,
+        "name":" Ramen \"Samyang Hot chicken\"",
+        "price": 1600,
         "category": "Food",
         "image": "project_images/f5.jpeg"
     },   {
         "id": 26,
-        "name":" food",
-        "price": 200,
+        "name":" Onigiri",
+        "price": 1500,
         "category": "Food",
         "image": "project_images/f6.jpeg"
     }
