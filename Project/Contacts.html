@@ -41,7 +41,6 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="Contacts.html">Register</a></li>
                   <li><a class="dropdown-item" href="Login.html">Login</a></li>
-                  <li><hr class="dropdown-divider"></li>
                 </ul>
               </li>
             </ul>
@@ -50,26 +49,31 @@
       </nav>
     </header>
 
-    <div class="contact-form my-1">
+    <div class="contact-form">
         <div class="card">
             <img class="kca_log mx-3" src="project_images/kca_logo.png">
             <h2 class="my-3">SIGN UP</h2>
             <form id="loginForm">
                 <div class="mb-3 input_box">
+                  <input type="text" id="name">
+                  <label id="name-label">Name</label>
+                  <div id="name-feedback" class="feedback"></div>
+                </div>
+                <div class="mb-3 input_box">
                     <input type="email" id="email">
-                    <label>Email</label>
+                    <label id="email-label">Email</label>
                 </div>
                 <div class="mb-3 input_box">
                   <input type="password" id="password">
-                    <label>Password</label>
+                    <label id="password-label">Password</label>
                   <div id="password-feedback" class="feedback"></div>
                 </div>
                 <div class="mb-3 input_box">
-                  <input type="password" id="password">
-                    <label>Verify Password</label>
-                  <div id="password-feedback" class="feedback"></div>
+                  <input type="password" id="passwordValidation">
+                    <label id="password-conf-label">Verify Password</label>
+                  <div id="passwordValidation-feedback" class="feedback"></div>
                 </div>
-                <div class="d-grid gap-2">
+                <div class="d-grid gap-2 my-4">
                     <button type="submit" class="btn my-3 btn-lg rounded-pill" id="submit">Sign Up</button>
                 </div>
             </form>
