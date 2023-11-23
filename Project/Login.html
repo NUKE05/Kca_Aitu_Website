@@ -101,7 +101,9 @@
       if (matchedUser) {
           var dataToUpdate = {
               elementId_main: 'login-conf',
-              newText_main: matchedUser.name
+              newText_main: matchedUser.name,
+              elementId_brn: 'login-conf-brn',
+              newText_brn: matchedUser.name
           };
     
           localStorage.setItem('updateInfo', JSON.stringify(dataToUpdate));

@@ -38,4 +38,3 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 toggleScrollToTopButton();
-
