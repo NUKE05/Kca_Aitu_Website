@@ -1,3 +1,4 @@
+/*change font size*/
 function changeFontSize(element, increase) {
     // Get the current font size
     var currentSize = parseInt(window.getComputedStyle(element).fontSize);
@@ -9,32 +10,18 @@ function changeFontSize(element, increase) {
     element.style.fontSize = newSize + "px";
 }
 
-let button = document.getElementById("myButton");
-button.addEventListener("click", function() {
-     console.log("Button clicked!");
-});
-/*
-function changeStyle(element, hover) {
-    if (hover) {
-        element.style.color = "cornsilk";
-    } else {
-        
-        element.style.color = "white";
-    }
-}
-*/
-
+/*scrool to section*/
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
-
+/*scroll to top*/
 const scrollToTopButton = document.getElementById("scrollToTopButton");
 
 function toggleScrollToTopButton() {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 475) {
         scrollToTopButton.style.display = "block";
     } else {
         scrollToTopButton.style.display = "none";
@@ -51,3 +38,4 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 toggleScrollToTopButton();
+
