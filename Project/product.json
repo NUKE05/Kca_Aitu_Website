@@ -29,30 +29,151 @@
     },
     {
         "id": 5,
-        "name":" stickers",
+        "name":" binder",
         "price": 200,
         "category": "Binders",
         "image": "project_images/photo_2023-11-23_22-59-12.jpg"
     },
     {
         "id": 6,
-        "name":" stickers",
+        "name":" poster",
         "price": 200,
         "category": "Posters",
         "image": "project_images/photo_2023-11-23_22-59-17.jpg"
     },
     {
         "id": 7,
-        "name":" stickers",
+        "name":" poster",
         "price": 200,
         "category": "Posters",
         "image": "project_images/photo_2023-11-23_22-59-22.jpg"
     },
     {
         "id": 8,
-        "name":" stickers",
+        "name":" cards set",
         "price": 200,
         "category": "Cards",
         "image": "project_images/photo_2023-11-23_22-59-26.jpg"
+    },
+    {
+        "id": 9,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/card1.jpeg"
+    },   {
+        "id": 10,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/card2.jpeg"
+    },
+    {
+        "id": 11,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/card3.jpeg"
+    },
+    {
+        "id": 12,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/card4.jpeg"
+    },
+    {
+        "id": 13,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/card5.jpeg"
+    },
+    {
+        "id": 14,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/card6.jpeg"
+    },
+    {
+        "id": 15,
+        "name":" album",
+        "price": 200,
+        "category": "Albums",
+        "image": "project_images/al1.jpeg"
+    },
+    {
+        "id": 16,
+        "name":" album",
+        "price": 200,
+        "category": "Albums",
+        "image": "project_images/al2.jpeg"
+    },
+    {
+        "id": 17,
+        "name":" album",
+        "price": 200,
+        "category": "Albums",
+        "image": "project_images/al3.jpeg"
+    },
+    {
+        "id": 18,
+        "name":" album",
+        "price": 200,
+        "category": "Albums",
+        "image": "project_images/al4.jpeg"
+    },
+    {
+        "id": 19,
+        "name":" album",
+        "price": 200,
+        "category": "Albums",
+        "image": "project_images/al5.jpeg"
+    },
+    {
+        "id": 20,
+        "name":" album",
+        "price": 200,
+        "category": "Albums",
+        "image": "project_images/al6.jpeg"
+    },
+    {
+        "id": 21,
+        "name":" food",
+        "price": 200,
+        "category": "Food",
+        "image": "project_images/f1.jpeg"
+    },
+    {
+        "id": 22,
+        "name":" food",
+        "price": 200,
+        "category": "Food",
+        "image": "project_images/f2.jpeg"
+    },   {
+        "id": 23,
+        "name":" food",
+        "price": 200,
+        "category": "Food",
+        "image": "project_images/f3.jpeg"
+    },   {
+        "id": 24,
+        "name":" food",
+        "price": 200,
+        "category": "Food",
+        "image": "project_images/f4.jpeg"
+    },   {
+        "id": 25,
+        "name":" food",
+        "price": 200,
+        "category": "Food",
+        "image": "project_images/f5.jpeg"
+    },   {
+        "id": 26,
+        "name":" food",
+        "price": 200,
+        "category": "Food",
+        "image": "project_images/f6.jpeg"
     }
 ]
