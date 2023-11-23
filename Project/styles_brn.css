@@ -45,7 +45,6 @@ h1, h3, p{
     color: white;
     font-size: 0.9375rem;
     font-weight: 600;
-    text-transform: capitalize;
 }
 .main-btn:hover {
     background-color: black;
