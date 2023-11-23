@@ -3,19 +3,18 @@
     padding:0;
     margin:0;
     color:white;
+    font-family: 'Inter', sans-serif;
+}
+.navbar a.nav-link{
+    margin-left: 35px;
 }
 .btnLogin-popup {
     width: 100px;
     background-color: white;
+    border-color: cornsilk;
 }
-
 .hover-text {
     transition: font-size 0.4s ease-out;
-}
-h3{
-    font-size: 4.5rem;
-    font-weight: 450;
-    text-align: center;
 }
 h1, h3, p{
     margin: 0 0;
@@ -45,6 +44,7 @@ h1, h3, p{
     color: white;
     font-size: 0.9375rem;
     font-weight: 600;
+    text-decoration: none;
 }
 .main-btn:hover {
     background-color: black;
@@ -116,7 +116,7 @@ body {
 .dark-text{
     color:black;
 }
-/*
+
 #scrollToTopButton {
     display: none;
     position: fixed;
@@ -133,4 +133,6 @@ body {
     font-size: 13px;
     line-height: 38px; 
 }
-*/
+.scroll-limit {
+    overflow-x: auto;
+}

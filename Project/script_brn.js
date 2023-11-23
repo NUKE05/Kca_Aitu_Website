@@ -22,18 +22,18 @@ function changeStyle(element, hover) {
     }
 }
 */
-
+/*
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
-/*
+*/
 const scrollToTopButton = document.getElementById("scrollToTopButton");
 
 function toggleScrollToTopButton() {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 500) {
         scrollToTopButton.style.display = "block";
     } else {
         scrollToTopButton.style.display = "none";
@@ -50,4 +50,3 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 toggleScrollToTopButton();
-*/
