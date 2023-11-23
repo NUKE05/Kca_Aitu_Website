@@ -8,17 +8,30 @@
 .navbar a.nav-link{
     margin-left: 35px;
 }
+.container{
+    position: relative;
+    place-items: center; 
+}
+.row{
+    align-items:center;
+    padding: 0 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: cornsilk;
+    overflow-x: hidden;
+}
 .btnLogin-popup {
     width: 100px;
     background-color: white;
     border-color: cornsilk;
 }
-.hover-text {
-    transition: font-size 0.4s ease-out;
-}
 h1, h3, p{
     margin: 0 0;
 }
+/*banner*/
 .top-banner{
     width:100%;
     background-image: url(project_images/brn_finalbanner.jpg);
@@ -56,17 +69,14 @@ h1, h3, p{
     color: black;
     border: 0.1875rem solid black;
 }
-html{
-    scroll-behavior: smooth;
+.hover-text {
+    transition: font-size 0.4s ease-out;
 }
 img{
     display: block;
     max-width: 100%;
     height: auto;
-}
-.container{
-    position: relative;
-    place-items: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 .thumbnail{
     width: 80%;
@@ -103,20 +113,10 @@ img{
     transform: scale(1.05);
 }
 
-.row{
-    align-items:center;
-    padding: 0 0;
-}
-
-body {
-    background-color: cornsilk;
-    overflow-x: hidden;
-}
-
 .dark-text{
     color:black;
 }
-
+/*info*/
 #scrollToTopButton {
     display: none;
     position: fixed;
@@ -135,4 +135,7 @@ body {
 }
 .scroll-limit {
     overflow-x: auto;
+}
+.video{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }

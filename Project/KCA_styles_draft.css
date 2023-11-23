@@ -174,3 +174,24 @@ body {
     font-size: 13px;
     line-height: 38px; 
 }
+#wordNotification {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    z-index: 1000;
+    max-width:30%;
+    border-color: black;
+}
+
+@media (max-width: 576px) {
+    #wordNotification {
+        max-width: 70%; 
+        font-size: 80%; 
+        right: 5%;
+    }
+}
+
+.toast-body {
+    background-color: rgb(225, 241, 255);
+    color: black;
+}

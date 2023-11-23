@@ -104,3 +104,39 @@ toggleLoginButton();
 window.addEventListener('resize', function() {
     toggleLoginButton();
 });
+
+/*word of the day*/
+document.addEventListener('DOMContentLoaded', function () {
+    displayWordOfTheDay();
+
+    const closeButton = document.querySelector('#wordNotification .btn-close');
+    closeButton.addEventListener('click', displayWordOfTheDay);
+});
+
+function displayWordOfTheDay() {
+    const words = ["안녕하세요 (annyeong haseyo) - “Hello”", "주세요 (juseyo) - “Please”", "몰라요 (mollayo) - “I don't know”", "아니요 (aniyo) - “No”", "예 (ye) - “Yes”"];
+
+    // get a random word from the array
+    const randomWord = words[Math.floor(Math.random() * words.length)];
+
+    // update the content of the toast notification
+    const wordOfTheDayElement = document.getElementById('wordOfTheDay');
+    wordOfTheDayElement.innerText = randomWord;
+
+    // show the toast notification
+    const wordNotification = new bootstrap.Toast(document.getElementById('wordNotification'), {
+        delay: 10000
+    });
+    wordNotification.show();
+}
+
+var storedData = localStorage.getItem('updateInfo');
+
+if (storedData) {
+    var dataToUpdate = JSON.parse(storedData);
+
+    var elementToUpdate = document.getElementById(dataToUpdate.elementId_main);
+    if (elementToUpdate) {
+        elementToUpdate.textContent = dataToUpdate.newText_main;
+    }
+}

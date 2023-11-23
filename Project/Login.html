@@ -86,46 +86,40 @@
       </div> 
     </div>
 
-    <!--<div class="container-fluid justify-content-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <ul class="list-inline social-media">
-                        <li class="list-inline-item">
-                            <a href="https://instagram.com/kca_aitu?igshid=MzRlODBiNWFlZA==" id="instagram-link">
-                              <i class="fa-brands fa-instagram fa-3x" style="color: black"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.tiktok.com/@bultaoreune_kca?_t=8fiQ3v1ZEDG&_r=1" id="tiktok-link"> 
-                              <i class="fa-brands fa-tiktok fa-3x" style="color: black"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://t.me/+UkXBxUkgeeNLQCAL" id="telegram-link">
-                              <i class="fa-brands fa-telegram fa-3x" style="color: black"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>-->
+    <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var storedData = JSON.parse(localStorage.getItem("myData")) || [];
     
-    <script> 
-      // Log in 
-      document.getElementById("loginForm").addEventListener("submit", function (e) { 
-          e.preventDefault(); 
-          const email = document.getElementById("email").value; 
-          const password = document.getElementById("password").value; 
-          const storedPassword = localStorage.getItem(email); 
- 
-          if (password === storedPassword) { 
-              document.getElementById("status1").innerText = "Login successful."; 
-          } else { 
-              document.getElementById("status1").innerText = "Login failed. Please check your credentials."; 
-          } 
-      }); 
+      var matchedUser = storedData.find(function (user) {
+          return user.email === email && user.password === password;
+      });
+    
+      if (matchedUser) {
+          var dataToUpdate = {
+              elementId_main: 'login-conf',
+              newText_main: matchedUser.name,
+              elementId_brn: 'login-conf-brn',
+              newText_brn: matchedUser.name
+          };
+    
+          localStorage.setItem('updateInfo', JSON.stringify(dataToUpdate));
+
+          document.getElementById("email").value = "";
+          document.getElementById("password").value = "";
+
+          window.location.href = "project_main.html"
+      } 
+      else if (email === "admin@example.com") {
+        alert('You will be redirected to admin page')
+      }
+      else {
+          alert('Invalid email or password. Please try again.');
+      }
+    });
     </script>
 
 
