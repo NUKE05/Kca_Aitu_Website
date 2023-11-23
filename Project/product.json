@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name":" poster",
+        "price": 200,
+        "category": "Posters",
+        "image": "project_images/photo_2023-11-23_16-58-43.jpg"
+    },
+    {
+        "id": 2,
+        "name":" cards set",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/photo_2023-11-23_16-58-51.jpg"
+    },
+    {
+        "id": 3,
+        "name":" poster",
+        "price": 200,
+        "category": "Posters",
+        "image": "project_images/photo_2023-11-23_16-58-35.jpg"
+    },
+    {
+        "id": 4,
+        "name":" stickers",
+        "price": 200,
+        "category": "Stickers",
+        "image": "project_images/photo_2023-11-23_16-58-47.jpg"
+    },
+    {
+        "id": 5,
+        "name":" stickers",
+        "price": 200,
+        "category": "Binders",
+        "image": "project_images/photo_2023-11-23_22-59-12.jpg"
+    },
+    {
+        "id": 6,
+        "name":" stickers",
+        "price": 200,
+        "category": "Posters",
+        "image": "project_images/photo_2023-11-23_22-59-17.jpg"
+    },
+    {
+        "id": 7,
+        "name":" stickers",
+        "price": 200,
+        "category": "Posters",
+        "image": "project_images/photo_2023-11-23_22-59-22.jpg"
+    },
+    {
+        "id": 8,
+        "name":" stickers",
+        "price": 200,
+        "category": "Cards",
+        "image": "project_images/photo_2023-11-23_22-59-26.jpg"
+    }
+]
