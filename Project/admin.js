@@ -73,7 +73,7 @@ function searchTable() {
   table = document.getElementById("editable");
   tr = table.getElementsByTagName("tr");
 
-  for (i = 0; i < tr.length; i++) {
+  for (i = 1; i < tr.length; i++) {
       var matchFound = false;
 
       // Loop through each column (email, password, name)
