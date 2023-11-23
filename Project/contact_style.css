@@ -88,3 +88,8 @@ body {
     font-weight: 600;
     transition: 0.3s ease;
 }
+
+.feedback {
+    font-size: 13px;
+    color: black;
+}

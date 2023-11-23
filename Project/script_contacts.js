@@ -1,17 +1,21 @@
 const nameInput = document.getElementById('name');
+const nameFeedback = document.getElementById('name-feedback')
 const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
-const sendButton = document.getElementById('sendButton');
+const sendButton = document.getElementById('submit');
+const emailLabel = document.getElementById('email-label')
+const passwordLabel = document.getElementById('password-label')
+const passwordConfLabel = document.getElementById('password-conf-label')
+const nameLabel = document.getElementById('name-label')
 
-nameInput.addEventListener('blur', validateName);
 emailInput.addEventListener('blur', validateEmail);
-messageInput.addEventListener('blur', validateMessage);
+nameInput.addEventListener('blur', validateName);
 
 function validateName() {
     const nameValue = nameInput.value.trim();
     if (nameValue === '') {
         nameInput.classList.add('is-invalid');
         nameInput.classList.remove('is-valid');
+        nameFeedback.textContent = 'Write you name please.';
     } else {
         nameInput.classList.remove('is-invalid');
         nameInput.classList.add('is-valid');
@@ -30,17 +34,6 @@ function validateEmail() {
     }
 }
 
-function validateMessage() {
-    const messageValue = messageInput.value.trim();
-    if (messageValue === '') {
-        messageInput.classList.add('is-invalid');
-        messageInput.classList.remove('is-valid');
-    } else {
-        messageInput.classList.remove('is-invalid');
-        messageInput.classList.add('is-valid');
-    }
-}
-
 const passwordInput = document.getElementById('password');
 const passwordValidationInput = document.getElementById('passwordValidation');
 const passwordFeedback = document.getElementById('password-feedback');
@@ -54,7 +47,8 @@ function validatePassword() {
     if (passwordValue.length < 8) {
         passwordInput.classList.add('is-invalid');
         passwordInput.classList.remove('is-valid');
-        passwordFeedback.textContent = 'Password must be at least 8 characters long.';
+        passwordFeedback.textContent = 'Password must have 8 characters.';
+
     } else {
         passwordInput.classList.remove('is-invalid');
         passwordInput.classList.add('is-valid');
@@ -78,7 +72,7 @@ function validatePasswordValidation() {
 }
 
 
-document.getElementById("sendButton").addEventListener("click", function() {
+document.getElementById("submit").addEventListener("click", function() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
@@ -90,11 +84,18 @@ document.getElementById("sendButton").addEventListener("click", function() {
 
     var existingData = JSON.parse(localStorage.getItem("myData")) || [];
     if (isUserAlreadyRegistered(email)) {
-        alert('Sorry, you are already registered with this username')
+        alert('Sorry, you are already registered with this login')
     }
     else {
         existingData.push(data);
-        alert("Registration successful! " + name + "is registered in the system")
+        var dataToUpdate = {
+            elementId_main: 'login-conf',
+            newText_main: name,
+            elementId_brn: 'login-conf-brn',
+            newText_brn: name
+        };
+        
+        localStorage.setItem('updateInfo', JSON.stringify(dataToUpdate));
     }
   
     localStorage.setItem("myData", JSON.stringify(existingData));
@@ -103,11 +104,11 @@ document.getElementById("sendButton").addEventListener("click", function() {
     document.getElementById("email").value= "";
     document.getElementById("password").value = "";
 
-    function isUserAlreadyRegistered(email) {
-        return existingData.some(data => data.email === email)
-    }
-    
-  });
+function isUserAlreadyRegistered(email) {
+    return existingData.some(data => data.email === email)
+}    
+});
+
 function redirectWithAlert(link, destination) {
     if (alert('You will be redirected to ' + destination + '.')) {
         window.location.href = link;
