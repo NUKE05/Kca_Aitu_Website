@@ -84,7 +84,7 @@ document.getElementById("submit").addEventListener("click", function() {
 
     var existingData = JSON.parse(localStorage.getItem("myData")) || [];
     if (isUserAlreadyRegistered(email)) {
-        alert('Sorry, you are already registered with this username')
+        alert('Sorry, you are already registered with this login')
     }
     else {
         existingData.push(data);
