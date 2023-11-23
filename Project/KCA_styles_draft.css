@@ -87,6 +87,10 @@ body {
     -webkit-transition-delay: 0.4s;
 }
 
+.btnRegister:hover {
+    background-color: aliceblue;
+}
+
 #readmore {
     white-space: pre-wrap;
     line-height: 35px;
@@ -176,7 +180,7 @@ body {
 }
 #wordNotification {
     position: fixed;
-    bottom: 5%;
+    bottom:10%;
     right: 1%;
     z-index: 1000;
     max-width:30%;

@@ -17,7 +17,6 @@ body {
 }
 
 section {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +24,6 @@ section {
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 button {
@@ -36,35 +34,21 @@ button:hover {
   background-color: powderblue;
 }
 
-.rounded-input {
-  padding: 8px 12px; 
-  border: 1px solid grey;
-  border-radius: 5px; 
-  outline: none; 
-  transition: border-color 0.3s ease-in-out; 
-}
-
 .rounded-input:hover {
   border-color: #555; 
 }
 
 #table-container {
-  width: 100%;
   overflow-x: auto;
-  margin-bottom: 20px;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
-  min-width: 800px; /* Set a minimum width for better readability */
 }
 
 th, td {
   border: 1px solid black;
   text-align: left;
-  padding: 8px;
 }
 
 th {

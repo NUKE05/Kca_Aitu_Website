@@ -1,3 +1,4 @@
+/*carousel*/
 document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 0;
     const slides = document.querySelectorAll(".carousel-item");
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/*register button*/
 document.addEventListener('DOMContentLoaded', function () {
     const registerButton = document.getElementById('registerButton');
   
@@ -43,14 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+/*countdown*/
 const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
-const currentYear = new Date().getFullYear();
+const currentYear = 2024;
 
-const peperoTime = new Date(`November 25 ${currentYear} 00:00:00`);
+const peperoTime = new Date(`February 25 ${currentYear} 00:00:00`);
 
 // update Countdown timer
 function updateCountdown() {
@@ -106,6 +109,48 @@ window.addEventListener('resize', function() {
 });
 
 /*word of the day*/
+
+var words = ["안녕하세요 (annyeong haseyo) - “Hello”","주세요 (juseyo) - “Please”", "몰라요 (mollayo) - “I don't know”", "아니요 (aniyo) - “No”", "예 (ye) - “Yes”"];
+var wordIndex;
+
+function getWordOfTheDay() {
+    // get the current date in the format YYYY-MM-DD
+    var currentDate = new Date().toISOString().split('T')[0];
+
+    // use localStorage to store and retrieve the index based on the date
+    var storedIndex = localStorage.getItem(currentDate);
+
+    // if an index is already stored for today, return the corresponding word; otherwise, set the index to 0
+    wordIndex = storedIndex ? parseInt(storedIndex) : 0;
+    return words[wordIndex];
+}
+
+function setWordOfTheDay() {
+    var wordNotification = new bootstrap.Toast(document.getElementById('wordNotification'));
+    var wordOfTheDayElement = document.getElementById('wordOfTheDay');
+
+    var wordOfTheDay = getWordOfTheDay();
+
+    // update the content of the toast
+    wordOfTheDayElement.textContent = wordOfTheDay;
+
+    // save the current index in localStorage for the current date
+    var currentDate = new Date().toISOString().split('T')[0];
+    localStorage.setItem(currentDate, wordIndex);
+
+    // increment the index for the next day
+    wordIndex = (wordIndex + 1) % words.length;
+
+    // show the toast notification
+    wordNotification.show();
+}
+
+window.onload = setWordOfTheDay;
+
+
+
+/*
+
 document.addEventListener('DOMContentLoaded', function () {
     displayWordOfTheDay();
 
@@ -139,4 +184,4 @@ if (storedData) {
     if (elementToUpdate) {
         elementToUpdate.textContent = dataToUpdate.newText_main;
     }
-}
+}\*/

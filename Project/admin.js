@@ -65,6 +65,62 @@ document.getElementById("add-button").addEventListener("click", function () {
   document.getElementById("admin-name").value = "";
 });
 
+// Function to search the table
+function searchTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("search");
+  filter = input.value;
+  table = document.getElementById("editable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+      var matchFound = false;
+
+      // Loop through each column (email, password, name)
+      for (var j = 0; j < 3; j++) {
+          td = tr[i].getElementsByTagName("td")[j];
+          
+          if (td) {
+              txtValue = td.textContent || td.innerText;
+
+              // Check if the column value contains the filter text (case-sensitive)
+              if (txtValue.includes(filter)) {
+                  matchFound = true;
+                  break;
+              }
+          }
+      }
+
+      // Show/hide the row based on matchFound
+      tr[i].style.display = matchFound ? "" : "none";
+  }
+}
+
+  // Display a message when no matching data is found
+
+/*
+function searchTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("editable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0]; // Change the index based on the column you want to search
+
+      if (td) {
+          txtValue = td.textContent || td.innerText;
+
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+          } else {
+              tr[i].style.display = "none";
+          }
+      }
+  }
+}
+*/
 // Function to edit an existing entry
 // function editEntry(index) {
 //   var data = JSON.parse(localStorage.getItem("myData"));
@@ -89,10 +145,7 @@ document.getElementById("add-button").addEventListener("click", function () {
 
 function editEntry(index) {
   var data = JSON.parse(localStorage.getItem("myData"));
-  var email = document.getElementById("admin-email").value;
-  var password = document.getElementById("admin-password").value;
-  var name = document.getElementById("admin-name").value;
-
+  
   if (index >= 0 && index < data.length) {
     // Prepopulate the form fields with the data of the selected row
     document.getElementById("admin-email").value = data[index].email;
@@ -101,16 +154,27 @@ function editEntry(index) {
 
     // Set a hidden field to store the index of the entry being edited
     document.getElementById("edit-index").value = index;
+    updateState(index);
   }
 }
 
-// Add an event listener to the Edit button
+
+function updateState(index) {
+  var data = JSON.parse(localStorage.getItem("myData")) || [];
+
+  data[index].email = document.getElementById("admin-email").value;
+  data[index].password = document.getElementById("admin-password").value;
+  data[index].name = document.getElementById("admin-name").value;
+
+  populateTable();
+}
+
 document.getElementById("edit-button").addEventListener("click", function () {
   var index = document.getElementById("edit-index").value;
   editEntry(index);
 });
 
-// Update the "Edit" button text based on whether data is being edited or not
+
 function updateEditButtonState(editing) {
   var editButton = document.getElementById("edit-button");
   if (editing) {
@@ -132,9 +196,3 @@ function deleteEntry(index) {
 
 // Populate the table when the page loads
 populateTable();
-
-
-
-
-
-
