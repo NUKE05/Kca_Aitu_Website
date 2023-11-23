@@ -51,9 +51,9 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
-const currentYear = new Date().getFullYear();
+const currentYear = 2024;
 
-const peperoTime = new Date(`November 25 ${currentYear} 00:00:00`);
+const peperoTime = new Date(`February 25 ${currentYear} 00:00:00`);
 
 // update Countdown timer
 function updateCountdown() {

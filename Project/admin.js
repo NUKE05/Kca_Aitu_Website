@@ -145,10 +145,7 @@ function searchTable() {
 
 function editEntry(index) {
   var data = JSON.parse(localStorage.getItem("myData"));
-  var email = document.getElementById("admin-email").value;
-  var password = document.getElementById("admin-password").value;
-  var name = document.getElementById("admin-name").value;
-
+  
   if (index >= 0 && index < data.length) {
     // Prepopulate the form fields with the data of the selected row
     document.getElementById("admin-email").value = data[index].email;
@@ -157,16 +154,27 @@ function editEntry(index) {
 
     // Set a hidden field to store the index of the entry being edited
     document.getElementById("edit-index").value = index;
+    updateState(index);
   }
 }
 
-// Add an event listener to the Edit button
+
+function updateState(index) {
+  var data = JSON.parse(localStorage.getItem("myData")) || [];
+
+  data[index].email = document.getElementById("admin-email").value;
+  data[index].password = document.getElementById("admin-password").value;
+  data[index].name = document.getElementById("admin-name").value;
+
+  populateTable();
+}
+
 document.getElementById("edit-button").addEventListener("click", function () {
   var index = document.getElementById("edit-index").value;
   editEntry(index);
 });
 
-// Update the "Edit" button text based on whether data is being edited or not
+
 function updateEditButtonState(editing) {
   var editButton = document.getElementById("edit-button");
   if (editing) {
@@ -188,9 +196,3 @@ function deleteEntry(index) {
 
 // Populate the table when the page loads
 populateTable();
-
-
-
-
-
-

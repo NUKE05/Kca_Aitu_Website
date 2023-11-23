@@ -87,6 +87,10 @@ body {
     -webkit-transition-delay: 0.4s;
 }
 
+.btnRegister:hover {
+    background-color: aliceblue;
+}
+
 #readmore {
     white-space: pre-wrap;
     line-height: 35px;
