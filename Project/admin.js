@@ -65,6 +65,62 @@ document.getElementById("add-button").addEventListener("click", function () {
   document.getElementById("admin-name").value = "";
 });
 
+// Function to search the table
+function searchTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("search");
+  filter = input.value;
+  table = document.getElementById("editable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+      var matchFound = false;
+
+      // Loop through each column (email, password, name)
+      for (var j = 0; j < 3; j++) {
+          td = tr[i].getElementsByTagName("td")[j];
+          
+          if (td) {
+              txtValue = td.textContent || td.innerText;
+
+              // Check if the column value contains the filter text (case-sensitive)
+              if (txtValue.includes(filter)) {
+                  matchFound = true;
+                  break;
+              }
+          }
+      }
+
+      // Show/hide the row based on matchFound
+      tr[i].style.display = matchFound ? "" : "none";
+  }
+}
+
+  // Display a message when no matching data is found
+
+/*
+function searchTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("editable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0]; // Change the index based on the column you want to search
+
+      if (td) {
+          txtValue = td.textContent || td.innerText;
+
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+          } else {
+              tr[i].style.display = "none";
+          }
+      }
+  }
+}
+*/
 // Function to edit an existing entry
 // function editEntry(index) {
 //   var data = JSON.parse(localStorage.getItem("myData"));
