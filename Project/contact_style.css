@@ -93,3 +93,34 @@ body {
     font-size: 13px;
     color: black;
 }
+
+@media (max-width: 576px) {
+    .contact-form {
+        margin-top: 20px; /* Increase top margin for better spacing */
+    }
+
+    .card {
+        padding: 20px; /* Add padding for better spacing within the card */
+    }
+
+    h2 {
+        font-size: 24px; /* Decrease heading font size */
+        margin-bottom: 20px; /* Add margin below the heading */
+    }
+
+    /* Adjust input fields */
+    .input_box input {
+        width: 100%; /* Make input fields full-width */
+        margin-bottom: 15px; /* Add margin between input fields */
+    }
+
+    .input_box label {
+        font-size: 14px; /* Decrease label font size */
+    }
+
+    /* Adjust button */
+    #submit {
+        width: 100%; /* Make the button full-width */
+        margin-top: 15px; /* Add margin at the top of the button */
+    }
+}
