@@ -209,7 +209,6 @@ body {
     border-color: black;
 }
 
-
 @media (max-width: 576px) {
     #wordNotification {
         max-width: 70%; 
