@@ -5,6 +5,10 @@ body{
 .navbar-custom {
     background-color: aliceblue;
 }
+.btnLogin-popup {
+    width: 100px;
+    background-color: #F7D6E0;
+}
 .container{
     width: 900px;
     margin: auto;
