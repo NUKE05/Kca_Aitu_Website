@@ -136,3 +136,17 @@ if (telegramLink) {
         redirectWithAlert('https://t.me/+UkXBxUkgeeNLQCAL', 'Telegram');
     });
 }
+
+function updateLabelForSmallScreen() {
+    const verifyPasswordLabel = document.getElementById('password-conf-label');
+
+    if (window.innerWidth < 576) {
+        verifyPasswordLabel.textContent = 'Verify'; 
+    } else {
+        verifyPasswordLabel.textContent = 'Verify Password'; 
+    }
+}
+
+window.addEventListener('resize', updateLabelForSmallScreen);
+
+updateLabelForSmallScreen();
