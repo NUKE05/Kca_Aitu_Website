@@ -87,10 +87,32 @@ body {
     -webkit-transition-delay: 0.4s;
 }
 
-.btnRegister:hover {
-    background-color: aliceblue;
+.btnRegister {
+    background-color: #F7D6E0;
+    color: black;
+    border: 0.1875rem solid black;
 }
-
+.btnRegister:hover {
+    background-color: black;
+    color: white;
+    border: 0.1875rem solid white;
+}
+#registerButton {
+    background-color: #F7D6E0;
+    color: black;
+    border: 0.1875rem solid black;
+}
+.btnRegister a {
+    color: black;
+}
+.btnRegister a:hover {
+    color: white;
+}
+#registerButton:hover {
+    background-color: black;
+    color: white;
+    border: 0.1875rem solid white;
+}
 #readmore {
     white-space: pre-wrap;
     line-height: 35px;
@@ -186,6 +208,7 @@ body {
     max-width:30%;
     border-color: black;
 }
+
 
 @media (max-width: 576px) {
     #wordNotification {
