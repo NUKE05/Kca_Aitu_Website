@@ -106,12 +106,12 @@ body {
     color: black;
 }
 .btnRegister a:hover {
-    color: white;
+    color: black;
 }
 #registerButton:hover {
-    background-color: black;
+    background-color: aliceblue;
     color: white;
-    border: 0.1875rem solid white;
+    border: 0.1875rem solid black;
 }
 #readmore {
     white-space: pre-wrap;
