@@ -28,7 +28,7 @@ function addCartToHTML() {
                     </div>
                     <div class="quantity">${product.quantity}</div>
                     <div class="returnPrice">
-                        $${product.price * product.quantity}
+                        KZT${product.price * product.quantity}
                     </div>`;
                 listCartHTML.appendChild(newP);
                 totalQuantity = totalQuantity + product.quantity;
