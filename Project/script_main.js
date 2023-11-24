@@ -147,6 +147,14 @@ function setWordOfTheDay() {
 
 window.onload = setWordOfTheDay;
 
+var storedData = localStorage.getItem('updateInfo');
+if (storedData) {
+    var dataToUpdate = JSON.parse(storedData);
+    var elementToUpdate = document.getElementById(dataToUpdate.elementId_main);
+    if (elementToUpdate) {
+        elementToUpdate.textContent = dataToUpdate.newText_main;
+    }
+}
 
 
 /*
