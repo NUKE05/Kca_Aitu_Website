@@ -75,27 +75,27 @@
             <h1>CHECKOUT</h1>
             <div class="form">
                 <div class="group">
-                    <label for="">Full Name</label>
-                    <input type="text" name="" id="">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName">
                 </div>
                 <div class="group">
-                    <label for="">Phone Number</label>
-                    <input type="text" name="" id="">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
                 </div>
                 <div class="group">
-                    <label for="">Address</label>
-                    <input type="text" name="" id="">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
                 </div>
                 <div class="group">
-                    <label for="">Country</label>
-                    <select name="" id="">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
                         <option value="">Chose...</option>
                         <option value="kazakhstan">Kazakhstan</option>
                     </select>
                 </div>
                 <div class="group">
-                    <label for="">City</label>
-                    <select name="" id="">
+                    <label for="city">City</label>
+                    <select name="city" id="city">
                         <option value="">Chose...</option>
                         <option value="astana">Astana</option>
                     </select>
@@ -111,12 +111,43 @@
                     <div class="totalPrice"></div>
                 </div>
             </div>
-            <button class="buttonCheckout">
+            <button class="buttonCheckout" onclick="validateForm()">
                 CHECKOUT
             </button>
         </div>
     </div>
   </div>
+  <script>
+    function validateForm() {
+        var fullName = document.getElementById('fullName').value;
+        var phoneNumber = document.getElementById('phoneNumber').value;
+        var address = document.getElementById('address').value;
+        var country = document.getElementById('country').value;
+        var city = document.getElementById('city').value;
+
+        var nameRegex = /^[A-Za-z ]+$/;
+            if (!nameRegex.test(fullName)) {
+                alert('Full Name should contain only letters.');
+                return false;
+            }
+
+        var phoneRegex = /^\d{11}$/;
+          if (!phoneRegex.test(phoneNumber)) {
+                alert('Phone Number should have 11 digits.');
+                return false;
+          }
+
+        if (fullName === '' || phoneNumber === '' || address === '' || country === '' || city === '') {
+            alert('Please fill in all the fields.');
+            return false;
+        }
+
+
+        alert('Checkout successful!');
+    }
+
+  
+</script>
 </body>
   <script src="checkout.js"></script>
 
