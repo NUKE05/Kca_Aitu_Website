@@ -43,6 +43,10 @@ header{
     top: 50%;
     right: -20px;
 }
+.button-value.active {
+    background-color:  #F7D6E0;
+    color: black;
+}
 .title{
     font-size: xx-large;
 }

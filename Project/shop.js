@@ -9,6 +9,13 @@ let cart = [];
 
 
 const filterProduct = (category) => {
+    document.querySelectorAll('.button-value').forEach(button => {
+        button.classList.remove('active');
+    });
+    const activeButton = document.querySelector(`.button-value[data-category="${category}"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
     const filteredProducts = category === 'all'
         ? products
         : products.filter(product => product.category === category);
@@ -25,7 +32,7 @@ const searchProduct = (searchTerm) => {
 }
 
 const renderProducts = (productsArray) => {
-    listProductHTML.innerHTML = ''; // Clear existing products
+    listProductHTML.innerHTML = ''; 
 
     if (productsArray.length > 0) {
         productsArray.forEach(product => {
@@ -45,15 +52,13 @@ const renderProducts = (productsArray) => {
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
+
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
     const addDataToHTML = () => {
-    // remove datas default from HTML
-
-        // add new datas
-        if(products.length > 0) // if has data
+        if(products.length > 0) 
         {
             products.forEach(product => {
                 let newProduct = document.createElement('div');
@@ -75,6 +80,7 @@ closeCart.addEventListener('click', () => {
             addToCart(id_product);
         }
     })
+
 const addToCart = (product_id) => {
     let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id);
     if(cart.length <= 0){
@@ -93,9 +99,11 @@ const addToCart = (product_id) => {
     addCartToHTML();
     addCartToMemory();
 }
+
 const addCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
+
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
@@ -116,7 +124,7 @@ const addCartToHTML = () => {
                 <div class="name">
                 ${info.name}
                 </div>
-                <div class="totalPrice">$${info.price * item.quantity}</div>
+                <div class="totalPrice">KZT${info.price * item.quantity}</div>
                 <div class="quantity">
                     <span class="minus"><</span>
                     <span>${item.quantity}</span>
